@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>NASA Artemis, Contact us</title>
+    <meta name="author" content="Ole Daland" />
+    <meta name="keywords" content="Artemis, Nasa" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Artemis is the name of NASA's program to return astronauts to the lunar surface by 2024. We are going forward to the Moon to stay."
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="/ProjectExam/Code/css/master.css"
+    />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="/ProjectExam/Code/pictures/favicon-32x32.png"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul>
+        <img
+          class="nasaIcon"
+          src="/ProjectExam/Code/pictures/nasa_icon.png"
+          alt="Nasa Icon"
+        />
+        <li><a class="li" href="index.html">Home</a></li>
+        <li><a class="li" href="launch_schedule.html">Launch Schedule</a></li>
+        <li><a class="li" href="imgGallery.html">Image Gallery</a></li>
+        <li><a class="active li" href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <header>
+      <div>
+        <h1 class="contactHeader">Contact us if you have any questions!</h1>
+      </div>
+    </header>
+    <main>
+      <form id="contactForm" class="contactForm">
+        <div class="form-group">
+          <h2>Name:</h2>
+          <input name="name" type="text" id="name" class="feedback-input" />
+          <div class="form-error" id="nameError">
+            <p>Please enter your first name</p>
+          </div>
+        </div>
+        <div class="form-group">
+          <h2>Email:</h2>
+          <input name="email" id="email" type="text" class="feedback-input" />
+          <div class="form-error" id="emailError">
+            <p>Please enter your email address</p>
+          </div>
+          <div class="form-error" id="invalidEmailError">
+            <p>Please enter a valid email address</p>
+          </div>
+        </div>
+        <h2>Your Question:</h2>
+        <textarea name="text" class="feedback-input"></textarea>
+        <button type="submit" class="btn btn-primary" id="submit">
+          Submit
+        </button>
+      </form>
+    </main>
+    <script src="/ProjectExam/Code/js/script.js"></script>
+  </body>
+  <footer>
+    <div class="footercontainer">
+      <div class="socialText"><h2>Follow us on social media</h2></div>
+      <div class="socialLinks">
+        <a href="https://twitter.com/nasa"
+          ><img
+            class="socialImg"
+            src="/ProjectExam/Code/pictures/twitter.png"
+            alt="Twitter Icon"
+        /></a>
+        <a href="https://www.facebook.com/NASA/"
+          ><img
+            class="socialImg"
+            src="/ProjectExam/Code/pictures/facebook.png"
+            alt="Facebook Icon"
+        /></a>
+        <a href="https://www.instagram.com/nasa/"
+          ><img
+            class="socialImg"
+            src="/ProjectExam/Code/pictures/instagram.png"
+            alt="Instagram Icon"
+        /></a>
+      </div>
+    </div>
+  </footer>
+</html>
